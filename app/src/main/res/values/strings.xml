@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">udemyCourse</string>
+    <string name="sign_in_title">Welcome!</string>
+    <string name="sign_in_button">Sign in</string>
+    <string name="sign_in_username_placeholder">Username</string>
+    <string name="sign_in_password_placeholder">Password</string>
+    <string name="title_activity_linear">linearActivity</string>
+</resources>
