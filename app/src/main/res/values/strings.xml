@@ -5,4 +5,8 @@
     <string name="sign_in_username_placeholder">Username</string>
     <string name="sign_in_password_placeholder">Password</string>
     <string name="title_activity_linear">linearActivity</string>
+    <string name="grades">0°</string>
+    <string name="city">City Example</string>
+    <string name="climate_title">Cloudy</string>
+    <string name="welcome_button">Continue</string>
 </resources>

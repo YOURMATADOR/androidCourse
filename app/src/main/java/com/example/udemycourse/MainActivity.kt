@@ -11,25 +11,17 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val tiUsername = findViewById<EditText>(R.id.tiUsername)
-        val bSignIn = findViewById<Button>(R.id.bSignIn)
-
-        bSignIn.setOnClickListener(View.OnClickListener {
-            if (validateLogIn()) {
-                Toast.makeText(this, "Hello " + tiUsername.text, Toast.LENGTH_SHORT).show()
-            } else {
-                Toast.makeText(this, "Please fill all the inputs", Toast.LENGTH_SHORT).show()
-            }
-        })
+        val city = intent.getStringExtra("com.example.udemycourse.linearActivity.CITY")
+        Toast.makeText(this, city, Toast.LENGTH_SHORT).show()
     }
 
-    fun validateLogIn(): Boolean {
-        val tiUsername = findViewById<EditText>(R.id.tiUsername)
-        val tiUsernameText = tiUsername.text
-
-        if (tiUsernameText.isNullOrEmpty()) {
-            return false
-        }
-        return true
-    }
+//    fun validateLogIn(): Boolean {
+//        val tiUsername = findView<ById<EditText>(R.id.tiUsername)
+//        val tiUsernameText = tiUsername.text
+//
+//        if (tiUsernameText.isNullOrEmpty()) {
+//            return false
+//        }
+//        return true
+//    }
 }
